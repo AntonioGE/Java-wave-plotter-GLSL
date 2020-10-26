@@ -27,9 +27,7 @@ public class Display extends GLJPanel implements GLEventListener,
         MouseWheelListener, MouseListener, MouseMotionListener {
 
     private float xMouse, yMouse;
-    private int lastX, lastY;
-    private boolean dragging = false;
-
+    
     private int vao[] = new int[1];
     private int vbo[] = new int[1];
 
@@ -164,7 +162,7 @@ public class Display extends GLJPanel implements GLEventListener,
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        dragging = false;
+
     }
 
     @Override
